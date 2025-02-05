@@ -1,9 +1,9 @@
-import { hello } from '../functions.js'
+import { convertMetersToYards } from "./meterstoyards.js"; 
 
 describe("A suite", function() {
-    it("contains spec with an expectation", function() {
-      let sHello = hello();
-      expect(sHello).toBe("hello");
+    it("converts 3 meters", function() {
+      let yards = convertMetersToYards(3);
+      expect(yards).toBe("3.28083");
     });
   });
   
